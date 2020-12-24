@@ -1,7 +1,6 @@
 <p align="center">
-<img src="frontend/src/components/banner.jpeg" /><br></p>
 
-# Sakshya - The Document Authentication E-Platform
+## Sakshya - The Document Authentication E-Platform
 
 (_solution designed During the VIVIDH initiative by B_chain Dynamics)
 The name Sakshya is not permanent, and will be changed soon.
@@ -21,9 +20,6 @@ Sakshya leverages the advantages of [Ethereum Network](https://ethereum.org/en/)
 
 The system creates a bridge between decentralized **Ethereum Blockchain Network** with centralized database.
 
-## How it works
-
-<img src="frontend/src/components/howitworks.png" /><br>
 
 ## Key benefits
 
