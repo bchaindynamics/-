@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@500&family=Roboto&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../CSS/sign_up.css">
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">
+            <a href="#">Sakshya</a>
+        </div>
+    </div>
+
+    <div class="main">
+        <section class="left">
+            <div class="illustration"></div>
+        </section>
+        <section class="right">
+            <div class="form-container">
+                <h1>Create a new Account...</h1>
+                <!-- Form -->
+                <form class="form">
+                    <div class="name">
+                        <div class="input-container">
+                            <label for="firstName">First Name</label>
+                            <input class="input" type="text" name="firstName" id="firstName">
+                            <p class="error first-name-error">* Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pharetra elit scelerisque lorem id at sed. Iaculis congue sociis vel egestas aliquam dui, sit facilisis mauris.</p>
+                        </div>
+                        
+                        <div class="input-container">
+                            <label for="lastName">Last Name</label>
+                            <input class="input" type="text" name="lastName" id="lastName">
+                            <p class="error last-name-error">* Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pharetra elit scelerisque lorem id at sed. Iaculis congue sociis vel egestas aliquam dui, sit facilisis mauris.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="input-container">
+                        <label for="firstName">Email</label>
+                        <input class="input" type="email" name="email" id="email">
+                        <p class="error">* Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pharetra elit scelerisque lorem id at sed. Iaculis congue sociis vel egestas aliquam dui, sit facilisis mauris.</p>
+                    </div>
+                    
+                    <div class="input-container">
+                        <label for="password">Password</label>
+                        <div class="input password-container">
+                            <input id="passwordInput" class="password-input" type="password" name="password">
+                            <img id="passwordToggle" class="eye-toggle-btn" src="../images/show.svg">
+                        </div>
+                        <p class="error">* Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pharetra elit scelerisque lorem id at sed. Iaculis congue sociis vel egestas aliquam dui, sit facilisis mauris.</p>
+                    </div>
+
+                    <div class="terms-container">
+                        <label class="checkboxContainer">
+                            <input type="checkbox">
+                            <div class="checkmark"></div>
+                            I agree to all the <a href="#">Terms and Conditions</a>
+                        </label>
+                    </div>  
+
+                    <button class="btn">Sign Up</button>
+                </form>
+
+                <h2>Already have an account? <a href="../HTML/login.html">Login</a></h2>
+            </div>
+        </section>
+    </div>
+
+    <!-- Custom JavaScript -->
+    <script src="/auth-files/js/sign_up.js"></script>
+</body>
+</html>
+
