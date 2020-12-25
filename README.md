@@ -7,7 +7,7 @@ The name Sakshya is not permanent, and will be changed soon.
 
 ## Overview
 
-Sakshya is a document authentication platform with the integration of cloud technology, in order to provide strong security, attack mitigation, and public auditing for transparency.
+Sakshya is a document authentication platform with the integration of cloud technology, in order to provide strong security, attack mitigation, and public auditing for transparency. 
 
 Sakshya's two main objectives are:
 
