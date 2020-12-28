@@ -6,6 +6,9 @@
     <title>Login</title>
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@500&family=Roboto&display=swap" rel="stylesheet">
+
+    <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-app.js"></script>
+
     <!-- Custom CSS -->
     <link rel="stylesheet" href="../css/login.css">
 </head>
@@ -27,7 +30,7 @@
                 <form class="form">                    
                     <div class="input-container">
                         <label for="firstName">Email</label>
-                        <input class="input" type="email" name="email" id="email">
+                        <input class="input" type="email" name="email" id="lemail">
                         <p class="error">* Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pharetra elit scelerisque lorem id at sed. Iaculis congue sociis vel egestas aliquam dui, sit facilisis mauris.</p>
                     </div>
                     
@@ -42,7 +45,7 @@
 
                     <a class="forgot-password" href="#">Forgot Password?</a>
 
-                    <button class="btn">Login</button>
+                    <button class="btn" id="btnlogin">Login</button>
                 </form>
 
                 <h2>Don't have an account? <a href="sign_up.html">Sign Up</a></h2>
@@ -66,7 +69,7 @@
     </div>
 
     <!-- Custom JavaScript -->
-    <script src="../js/login.js"></script>
+    <script src="../js/app.js"></script>
 </body>
 </html>
 
