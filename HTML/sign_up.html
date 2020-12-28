@@ -4,22 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign Up</title>
-
-    <!-- The core Firebase JS SDK is always required and must be listed first -->
-    <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-auth.js"></script>
-
-    <script src="../js/sign_up.js"></script>
-
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@500&family=Roboto&display=swap" rel="stylesheet">
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="../CSS/sign_up.css">
+    <link rel="stylesheet" href="../css/sign_up.css">
+    
 </head>
 <body>
     <div class="navbar">
         <div class="logo">
-            <a href="#">Sakshya</a>
+            <a href="../uplift.html">Logo</a>
         </div>
     </div>
 
@@ -33,17 +27,17 @@
                 <!-- Form -->
                 <form class="form">
                     <div class="name">
-                        <!-- <div class="input-container">
+                        <div class="input-container">
                             <label for="firstName">First Name</label>
                             <input class="input" type="text" name="firstName" id="firstName">
                             <p class="error first-name-error">* Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pharetra elit scelerisque lorem id at sed. Iaculis congue sociis vel egestas aliquam dui, sit facilisis mauris.</p>
-                        </div> -->
+                        </div>
                         
-                        <!-- <div class="input-container">
+                        <div class="input-container">
                             <label for="lastName">Last Name</label>
                             <input class="input" type="text" name="lastName" id="lastName">
                             <p class="error last-name-error">* Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pharetra elit scelerisque lorem id at sed. Iaculis congue sociis vel egestas aliquam dui, sit facilisis mauris.</p>
-                        </div> -->
+                        </div>
                     </div>
                     
                     <div class="input-container">
@@ -61,24 +55,24 @@
                         <p class="error">* Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pharetra elit scelerisque lorem id at sed. Iaculis congue sociis vel egestas aliquam dui, sit facilisis mauris.</p>
                     </div>
 
-                    <!-- <div class="terms-container">
+                    <div class="terms-container">
                         <label class="checkboxContainer">
                             <input type="checkbox">
                             <div class="checkmark"></div>
                             I agree to all the <a href="#">Terms and Conditions</a>
                         </label>
-                    </div>   -->
+                    </div>  
 
-                    <button onclick="signUp()" id="signUp" class="btn">Sign Up</button>
+                    <button class="btn">Sign Up</button>
                 </form>
 
-                <h2>Already have an account? <a href="../HTML/login.html">Login</a></h2>
+                <h2>Already have an account? <a href="login.html">Login</a></h2>
             </div>
         </section>
     </div>
 
     <!-- Custom JavaScript -->
-    
+    <script src="../js/sign_up.js"></script>
 </body>
 </html>
 
