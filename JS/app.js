@@ -40,18 +40,18 @@ console.log(firebase);
 
   
   //Add login event 
-  btnlogin.addEventListener('click', e => {
+  // btnlogin.addEventListener('click', e => {
 
-    // Get element and pass 
+  //   // Get element and pass 
 
-    const email = lemail.value;
-    const pass = passwordInput.value;
-    const auth = firebase.auth();
+  //   const email = lemail.value;
+  //   const pass = passwordInput.value;
+  //   const auth = firebase.auth();
 
-    const promise = auth.signInWithEmailAndPassword(email, pass);
-    promise.catch(e => console.log(e.message));
+  //   const promise = auth.signInWithEmailAndPassword(email, pass);
+  //   promise.catch(e => console.log(e.message));
 
-  });
+  // });
 
   
   // Add signup event 
