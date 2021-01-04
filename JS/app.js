@@ -66,6 +66,7 @@ console.log(firebase);
 
     const promise = auth.createUserWithEmailAndPassword(email, pass);
     promise.catch(e =>console.log(e.message));
+    window.location = "dashboard.html";
 
   });
 
@@ -87,3 +88,7 @@ console.log(firebase);
   
 
 }());
+
+
+
+

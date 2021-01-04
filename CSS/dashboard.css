@@ -81,7 +81,7 @@ line-height: 24px;
 /* identical to box height */
 text-align: center;
 text-decoration-line: underline;
-color: #3316E7;
+color: #6FFFE8;
 }
 .heading{
     position: absolute;
@@ -114,6 +114,11 @@ text-decoration-line: underline;
 
 color: #6FFFE8;
 }
+
+.option-1,a{
+    color: #6FFFE8;
+}
+
 .option-2{
     position: absolute;
 left: 553px;
