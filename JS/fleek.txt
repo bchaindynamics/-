@@ -1,0 +1,13 @@
+// Generated
+
+api key = 78mH7Xos1NXz87I72e4HMQ==
+api secret = 1vzkKqAgF2GA943tClrunCGEfh7gDKUHd1g05rfaW/A=
+
+
+// By Default 
+
+environment: 'prd',
+  apiKey: 'yRhDT6AbxcnvHCvyONAPcg==',
+  apiSecret: '315/N7XgQ54DFw2Ar1pvNy9Jx6422aU3i8iqAk05jho=',
+  username: 'EXAWZjKJbqVeKPRY',
+  _id: 'ElTWXmPjBxa1ALAJ'

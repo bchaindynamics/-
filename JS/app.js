@@ -66,23 +66,23 @@ console.log(firebase);
 
     const promise = auth.createUserWithEmailAndPassword(email, pass);
     promise.catch(e =>console.log(e.message));
-    window.location = "dashboard.html";
+    
 
   });
 
 
 // Add a real time listner 
-      const auth = firebase.auth();
-  firebase.auth().onAuthStateChanged( firebaseUser => {
-        if (firebaseUser) 
-        {
-          console.log(firebaseUser);
-        }
-          else
-          {
-            console.log('not loged in');
-          }
-    });
+  //     const auth = firebase.auth();
+  // firebase.auth().onAuthStateChanged( firebaseUser => {
+  //       if (firebaseUser) 
+  //       {
+  //         window.location = "dashboard.html";
+  //       }
+  //         else
+  //         {
+  //           console.log('not loged in');
+  //         }
+  //   });
 
 
   

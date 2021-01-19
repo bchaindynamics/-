@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Application</title>
+</head>
+<body>
+
+	<div>
+		<input type="text" id="idvalue" name="">
+		<button id="getid">Get ID</button>
+		<button id="publish">Publish</button>
+
+	</div>
+
+		<script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
+		<script src="https://unpkg.com/web3@latest/dist/web3.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/web3/1.3.1/web3.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/web3/1.3.1/web3.min.js.map"></script>
+
+		<script type="text/javascript">
+			var contract;
+			$(document).ready(function(){
+				web3 = new web3(web3.currentProvider);
+
+				var address = "0xf8e81D47203A594245E36C48e151709F0C19fBe8";
+
+				var abi = [
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"internalType": "int256",
+				"name": "id",
+				"type": "int256"
+			}
+		],
+		"name": "Publish",
+		"outputs": [],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "constructor"
+	},
+	{
+		"constant": true,
+		"inputs": [],
+		"name": "getID",
+		"outputs": [
+			{
+				"internalType": "int256",
+				"name": "",
+				"type": "int256"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	}
+];
+
+				contract = new web3.eth.contract(abi, address);
+
+				contract.methods.getID().call().then(function(id))
+				{
+					$('#getid').html(id)
+				}
+			})
+		</script>
+
+</body>
+</html>

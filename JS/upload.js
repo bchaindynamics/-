@@ -1,0 +1,33 @@
+const fs = require('fs');
+const path = require('path');
+const fleek = require('@fleekhq/fleek-storage-js');   
+
+const apiKey = process.env.FLEEK_API_KEY;
+const apiSecret = process.env.FLEEK_API_SECRET;
+
+const testFunctionUpload = async (data) => {
+  const date = new Date();
+  const timestamp = date.getTime();
+
+  const input = {
+    apiKey,
+    apiSecret,
+    key: `1.jpg`,
+    data,
+  };
+
+  try {
+    const result = await fleek.upload(input);
+    console.log(result);
+  } catch(e) {
+    console.log('error', e);
+  }
+}
+
+const filePath = path.join(__dirname, 'README.md');
+
+fs.readFile(filePath, (err, data) => {
+  if(!err) {
+    testFunctionUpload(data);
+  }
+})
