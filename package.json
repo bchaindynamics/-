@@ -19,6 +19,7 @@
   "homepage": "https://github.com/bchaindynamics/sakshya#readme",
   "dependencies": {
     "ipfs-http-client": "^48.2.0",
+    "mongodb": "^3.6.3",
     "mongoose": "^5.11.12"
   }
 }
